@@ -939,93 +939,6 @@ a {
 	}
 	}
 
-.feature-item {
-	
-	position: relative;
-	padding-bottom: 2.5rem;
-}
-
-@media (min-width: 530px) {
-
-.feature-item {
-		padding-left: 94px
-}
-	}
-
-.feature-item__icon {
-		display: block;
-		margin: 0 auto;
-	}
-
-@media (min-width: 530px) {
-
-.feature-item__icon {
-		position: absolute;
-		left: 0
-	}
-	}
-
-.feature-item__title {
-		font-size: 1.6rem;
-		font-weight: 300;
-		margin-bottom: .8em;
-		margin-top: .7em;
-		text-align: center;
-	}
-
-@media (min-width: 530px) {
-
-.feature-item__title {
-			text-align: left;
-			margin-top: 1em;
-			font-size: 1.875rem
-	}
-	}
-
-.testimonial {
-	background-color: rgba(255, 255, 255, 0.8);
-	padding:0 18px 1px 18px;
-	margin-bottom: 98px;
-}
-
-@media (min-width: 1010px) {
-
-.testimonial {
-		margin-bottom: 0;
-		padding:0 1.875rem 1px 1.875rem
-}
-	}
-
-.testimonial__photo {
-		border-radius: 80px;
-		overflow: hidden;
-		width: 160px;
-		height: 160px;
-		margin: 0 auto -80px auto;
-		position: relative;
-		top: -80px;
-		border: 6px solid rgba(255, 255, 255, 0.8);
-	}
-
-.testimonial__title {
-		color: #2f5572;
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 500;
-		margin: 0;
-	}
-
-.testimonial__subtitle {
-		color: #d59541;
-		text-align: center;
-		font-size: 0.9375rem;
-		margin: .25rem 0 1rem 0;
-	}
-
-.testimonial__last {
-		margin-bottom: 0;
-	}
-
 /* Do not edit modules/_sprite directly as it is generated 
 automatically by Gulp. instead edit gulp/templates/sprite */
 
@@ -1150,10 +1063,6 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		position: fixed;
 		background-color: rgba(47,85,114, .3)
 }
-
-		.site-header--dark {
-			background-color: rgba(23, 51, 72, .85);
-		}
 	}
 
 @media (min-width: 800px) {
@@ -1164,37 +1073,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 
 .site-header__logo {
-		position: absolute;
-		background-color: #2f5572;
-		padding: 25px 36px;
-		top: 0;
-		left: 50%;
-		-webkit-transform: translateX(-50%) scale(.8);
-		        transform: translateX(-50%) scale(.8);
-		-webkit-transform-origin: 50% 0;
-		        transform-origin: 50% 0;
-		-webkit-transition: -webkit-transform .3s ease-out;
-		transition: -webkit-transform .3s ease-out;
-		transition: transform .3s ease-out;
-		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-	}
-
-@media (min-width: 800px) {
-
-.site-header__logo {
-		left: auto;
-		-webkit-transform: translateX(0);
-		        transform: translateX(0)
-	}
-
-			.site-header--dark .site-header__logo {
-				-webkit-transform: scale(.55);
-				        transform: scale(.55);
-			}
-	}
-
-.site-header__logo__graphic {
-		text-indent: -9999px;
+	background-color: transparent;
 	}
 
 .site-header__menu-icon {
@@ -1392,89 +1271,3 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 .reveal-item--is-visible {
 		opacity: 1;
 	}
-
-.modal {
-	position: fixed;
-	z-index: 5;
-	background-color: rgba(255, 255, 255, .94);
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: scale(1.2);
-	        transform: scale(1.2);
-	-webkit-transition: all .3s ease-out;
-	transition: all .3s ease-out;
-}
-
-.modal--is-visible {
-		opacity: 1;
-		visibility: visible;
-		-webkit-transform: scale(1);
-		        transform: scale(1);
-	}
-
-.modal__inner {
-		position: absolute;
-		width: 100%;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		        transform: translateY(-50%);
-	}
-
-.modal__description {
-		text-align: center;
-		font-size: 1.3rem;
-		font-weight: 300;
-		line-height: 1.65;
-	}
-
-.modal__close {
-		position: absolute;
-		top: 15px;
-		right: 15px;
-		font-size: 2rem;
-		-webkit-transform: scaleX(1.2);
-		        transform: scaleX(1.2);
-		-webkit-transform-origin: 100% 0;
-		        transform-origin: 100% 0;
-		color: #2f5572;
-		cursor: pointer;
-
-	}
-
-.modal__close:hover {
-			color: #d59541;
-		}
-
-.social-icon {
-	text-align: center;
-}
-
-.social-icon__icon {
-		background-color: #d59541;
-		display: inline-block;
-		margin: 0 5px 5px 5px;
-		width: 33%;
-		height: 72px;
-		position: relative;
-	}
-
-@media (min-width: 530px) {
-
-.social-icon__icon {
-			width: 72px;
-			margin: 0 5px
-	}
-	}
-
-.social-icon__icon .icon {
-			display: block;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			        transform: translate(-50%, -50%);
-		}
