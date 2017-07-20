@@ -558,16 +558,10 @@ a {
 .project {
 	background: #329649;
 	width: 100%;
-	height: 500px;
+	height: auto;
 	color: #fff;
 	position: relative;
 }
-
-.project p {
-		margin: 0;
-		padding-top: 100px;
-		font-family: 'Work Sans', sans-serif;
-	}
 
 .project:before {
 	content: '';
@@ -934,49 +928,11 @@ a {
 	}
 
 .section-title {
-	font-size: 2.55rem;
-	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	padding-top: 100px;
 	text-align: center;
 }
-
-@media (min-width: 530px) {
-
-.section-title {
-		font-size: 3.75rem
-}
-	}
-
-.section-title strong {
-		font-weight: 500;
-	}
-
-.section-title__blue {
-		color: #000;
-	}
-
-.section-title__less-margin {
-		margin-top: 0;
-		margin-bottom: 1.3rem;
-	}
-
-.section-title__icon {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: .6rem;
-	}
-
-@media (min-width: 530px) {
-
-.section-title__icon {
-			position: relative;
-			top: 8px;
-			margin-right: .5rem;
-			margin-left: 0;
-			margin-bottom: 0;
-			display: inline-block
-	}
-	}
 
 /* Do not edit modules/_sprite directly as it is generated 
 automatically by Gulp. instead edit gulp/templates/sprite */

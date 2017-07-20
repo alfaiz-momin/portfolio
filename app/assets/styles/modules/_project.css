@@ -1,15 +1,9 @@
 .project {
 	background: $mainGreen;
 	width: 100%;
-	height: 500px;
+	height: auto;
 	color: #fff;
 	position: relative;
-
-	p {
-		margin: 0;
-		padding-top: 100px;
-		font-family: $paragraph;
-	}
 }
 
 .project:before {
