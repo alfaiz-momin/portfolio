@@ -510,8 +510,9 @@ a {
 .large-hero__title {
 	font-weight: 500;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0;
+	margin-bottom: 10px;
 
 }
 
@@ -526,7 +527,7 @@ a {
 .large-hero__subtitle {
 	font-weight: 500;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0;
 }
 
@@ -539,12 +540,12 @@ a {
 
 .large-hero__description {
 	color: #fff;
-	font-size: 1.1rem;
-	font-weight: 300;
+	font-size: 1rem;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 	max-width: 30rem;
 	margin-left: auto;
 	margin-right: auto;
+	letter-spacing: 2px;
 }
 
 @media (min-width: 530px) {
@@ -552,6 +553,44 @@ a {
 .large-hero {
 		font-size: 1.875rem
 
+}
+	}
+
+.shape:before {
+	content: '';
+	width: 50%;
+	height: 65px;
+	position: absolute;
+	top: -48px;
+	left: 0;
+	background-color: #329649;
+	-webkit-transform: skewY(8deg);
+	        transform: skewY(8deg);
+}
+
+@media (min-width: 800px) {
+
+.shape:before {
+		height: 100px
+}
+	}
+
+.shape:after {
+	content: '';
+	width: 50%;
+	height: 65px;
+	position: absolute;
+	top: -48px;
+	right: 0;
+	background-color: #329649;
+	-webkit-transform: skewY(-8deg);
+	        transform: skewY(-8deg);
+}
+
+@media (min-width: 800px) {
+
+.shape:after {
+		height: 100px
 }
 	}
 
@@ -563,28 +602,67 @@ a {
 	position: relative;
 }
 
-.project:before {
-	content: '';
-	width: 50%;
-	height: 100px;
-	position: absolute;
-	top: -48px;
-	left: 0;
-	background-color: #329649;
-	-webkit-transform: skewY(8deg);
-	        transform: skewY(8deg);
+.project-box {
+	width: 280px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
-.project:after {
-	content: '';
-	width: 50%;
-	height: 100px;
+@media (min-width: 800px) {
+
+.project-box {
+		width: 450px
+}
+	}
+
+.project-box img {
+	width: 100%;
+}
+
+.project-text {
 	position: absolute;
-	top: -48px;
-	right: 0;
-	background-color: #329649;
-	-webkit-transform: skewY(-8deg);
-	        transform: skewY(-8deg);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	-webkit-transform: scale(0);
+	        transform: scale(0);
+	opacity: 0;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+.project-text p {
+		text-align: center;
+	}
+
+.project-text ul {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		-webkit-transform-origin: top left;
+		        transform-origin: top left;
+	}
+
+@media (min-width: 800px) {
+
+.project-text ul {
+			top: 20%;
+			left: 30%
+	}
+	}
+
+.project-text ul li {
+			margin: 5px;
+		}
+
+.project-box:hover .project-text {
+	opacity: 0.8;
+	-webkit-transform: scale(1);
+	        transform: scale(1);
 }
 
 .btn{
@@ -784,7 +862,7 @@ a {
 	}
 
 .row__t-padding {
-		padding-top: 80px;
+		padding-top: 60px;
 	}
 
 .row__gutters {
@@ -930,9 +1008,16 @@ a {
 .section-title {
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	padding-top: 100px;
+	padding-top: 25px;
 	text-align: center;
 }
+
+@media (min-width: 800px) {
+
+.section-title {
+		padding-top: 100px
+}
+	}
 
 /* Do not edit modules/_sprite directly as it is generated 
 automatically by Gulp. instead edit gulp/templates/sprite */

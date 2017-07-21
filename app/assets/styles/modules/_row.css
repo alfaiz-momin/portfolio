@@ -3,7 +3,7 @@
 	@mixin clearfix;
 
 	&__t-padding {
-		padding-top: 80px;
+		padding-top: 60px;
 	}
 
 	&__gutters {

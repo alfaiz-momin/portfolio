@@ -1,6 +1,10 @@
 .section-title {
 	font-family: $heading;
 	color: #fff;
-	padding-top: 100px;
+	padding-top: 25px;
 	text-align: center;
+
+	@mixin atMedium {
+		padding-top: 100px;
+	}
 }

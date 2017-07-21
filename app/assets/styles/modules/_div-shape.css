@@ -1,0 +1,28 @@
+.shape:before {
+	content: '';
+	width: 50%;
+	height: 65px;
+	position: absolute;
+	top: -48px;
+	left: 0;
+	background-color: $mainGreen;
+	transform: skewY(8deg);
+
+	@mixin atMedium {
+		height: 100px;
+	}
+}
+.shape:after {
+	content: '';
+	width: 50%;
+	height: 65px;
+	position: absolute;
+	top: -48px;
+	right: 0;
+	background-color: $mainGreen;
+	transform: skewY(-8deg);
+
+	@mixin atMedium {
+		height: 100px;
+	}
+}

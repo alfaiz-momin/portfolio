@@ -6,23 +6,55 @@
 	position: relative;
 }
 
-.project:before {
-	content: '';
-	width: 50%;
-	height: 100px;
-	position: absolute;
-	top: -48px;
-	left: 0;
-	background-color: $mainGreen;
-	transform: skewY(8deg);
+.project-box {
+	width: 280px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+
+	@mixin atMedium {
+		width: 450px;
+	}
 }
-.project:after {
-	content: '';
-	width: 50%;
-	height: 100px;
+
+.project-box img {
+	width: 100%;
+}
+
+.project-text {
 	position: absolute;
-	top: -48px;
-	right: 0;
-	background-color: $mainGreen;
-	transform: skewY(-8deg);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transform: scale(0);
+	opacity: 0;
+	transition: .5s;
+
+	p {
+		text-align: center;
+	}
+
+	ul {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		transform-origin: top left;
+
+		@mixin atMedium {
+			top: 20%;
+			left: 30%;
+		}
+
+		li {
+			margin: 5px;
+		}
+	}
+}
+
+.project-box:hover .project-text {
+	opacity: 0.8;
+	transform: scale(1);
 }
