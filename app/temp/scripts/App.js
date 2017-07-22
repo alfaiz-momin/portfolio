@@ -10342,13 +10342,21 @@ var _StickyHeader = __webpack_require__(3);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _ProjectTabs = __webpack_require__(6);
+
+var _ProjectTabs2 = _interopRequireDefault(_ProjectTabs);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import RevealOnScroll from './modules/RevealOnScroll';
 var mobileMenu = new _MobileMenu2.default();
 // new RevealOnScroll($(".feature-item"), "20%");
 // new RevealOnScroll($(".testimonial"), "60%");
+
+// import RevealOnScroll from './modules/RevealOnScroll';
 var stickyHeader = new _StickyHeader2.default();
+var projectTabs = new _ProjectTabs2.default();
+
+//always start var name with small latters
 
 /***/ }),
 /* 2 */
@@ -11641,6 +11649,53 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ProjectTabs = function () {
+	function ProjectTabs() {
+		_classCallCheck(this, ProjectTabs);
+
+		this.tabButton = (0, _jquery2.default)(".project__btn>a");
+		this.changeTheContent();
+	}
+
+	_createClass(ProjectTabs, [{
+		key: "changeTheContent",
+		value: function changeTheContent() {
+			this.tabButton.on('click', function () {
+				var tabID = (0, _jquery2.default)(this).attr('data-trigger');
+				(0, _jquery2.default)('div#' + tabID).fadeIn(1000);
+				(0, _jquery2.default)('.tab-box:not(#' + tabID + ')').hide();
+				(0, _jquery2.default)(this).addClass('active');
+				(0, _jquery2.default)(this).siblings('a').removeClass('active');
+			});
+		}
+	}]);
+
+	return ProjectTabs;
+}();
+
+exports.default = ProjectTabs;
 
 /***/ })
 /******/ ]);

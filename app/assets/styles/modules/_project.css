@@ -4,6 +4,30 @@
 	height: auto;
 	color: #fff;
 	position: relative;
+
+	&__btn {
+		text-align: center;
+		margin: 20px 0px;
+
+		@mixin atMedium {
+			margin: 50px 0px;
+		}
+		a {
+			margin: 10px;
+		}
+	}
+
+	&__btn>.active {
+		background-color: $mainBlue;
+	}
+}
+
+.tab-box {
+	display: none;
+}
+
+.tab-box.active {
+	display: block;
 }
 
 .project-box {
@@ -40,12 +64,12 @@
 	ul {
 		position: absolute;
 		top: 20%;
-		left: 20%;
+		left: 10%;
 		transform-origin: top left;
 
 		@mixin atMedium {
 			top: 20%;
-			left: 30%;
+			left: 20%;
 		}
 
 		li {

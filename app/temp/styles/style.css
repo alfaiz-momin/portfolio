@@ -602,6 +602,34 @@ a {
 	position: relative;
 }
 
+.project__btn {
+		text-align: center;
+		margin: 20px 0px;
+	}
+
+@media (min-width: 800px) {
+
+.project__btn {
+			margin: 50px 0px
+	}
+	}
+
+.project__btn a {
+			margin: 10px;
+		}
+
+.project__btn>.active {
+		background-color: #000;
+	}
+
+.tab-box {
+	display: none;
+}
+
+.tab-box.active {
+	display: block;
+}
+
 .project-box {
 	width: 280px;
 	margin: 0 auto;
@@ -642,7 +670,7 @@ a {
 .project-text ul {
 		position: absolute;
 		top: 20%;
-		left: 20%;
+		left: 10%;
 		-webkit-transform-origin: top left;
 		        transform-origin: top left;
 	}
@@ -651,7 +679,7 @@ a {
 
 .project-text ul {
 			top: 20%;
-			left: 30%
+			left: 20%
 	}
 	}
 
