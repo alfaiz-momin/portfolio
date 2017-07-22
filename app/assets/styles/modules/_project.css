@@ -4,6 +4,7 @@
 	height: auto;
 	color: #fff;
 	position: relative;
+	padding-bottom: 100px;
 
 	&__btn {
 		text-align: center;

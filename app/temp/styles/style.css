@@ -563,7 +563,7 @@ a {
 	position: absolute;
 	top: -48px;
 	left: 0;
-	background-color: #329649;
+	background: inherit;
 	-webkit-transform: skewY(8deg);
 	        transform: skewY(8deg);
 }
@@ -582,7 +582,7 @@ a {
 	position: absolute;
 	top: -48px;
 	right: 0;
-	background-color: #329649;
+	background: inherit;
 	-webkit-transform: skewY(-8deg);
 	        transform: skewY(-8deg);
 }
@@ -600,6 +600,7 @@ a {
 	height: auto;
 	color: #fff;
 	position: relative;
+	padding-bottom: 100px;
 }
 
 .project__btn {
@@ -691,6 +692,15 @@ a {
 	opacity: 0.8;
 	-webkit-transform: scale(1);
 	        transform: scale(1);
+}
+
+.about {
+	width: 100%;
+	height: auto;
+	background-color: #454E56;
+	position: relative;
+	padding-top: 100px;
+    color: #fff;
 }
 
 .btn{
