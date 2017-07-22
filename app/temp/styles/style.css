@@ -699,9 +699,16 @@ a {
 	height: auto;
 	background-color: #454E56;
 	position: relative;
-	padding-top: 100px;
+	padding-top: 20px;
     color: #fff;
 }
+
+@media (min-width: 800px) {
+
+.about {
+    	padding-top: 100px
+}
+	}
 
 .btn{
 	background-color: #d59541;

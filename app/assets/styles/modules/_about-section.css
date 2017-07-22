@@ -3,6 +3,10 @@
 	height: auto;
 	background-color: $gray;
 	position: relative;
-	padding-top: 100px;
+	padding-top: 20px;
     color: #fff;
+
+    @mixin atMedium {
+    	padding-top: 100px;	
+    }
 }
