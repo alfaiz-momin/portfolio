@@ -3,7 +3,11 @@
 	@mixin clearfix;
 
 	&__t-padding {
-		padding-top: 60px;
+		padding-top: 0px;
+
+		@mixin atMedium {
+			padding-top: 60px;
+		}
 	}
 
 	&__gutters {
