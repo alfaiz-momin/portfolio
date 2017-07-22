@@ -2,9 +2,15 @@
 	font-family: $heading;
 	color: #fff;
 	padding-top: 25px;
+	padding-bottom: 25px;
 	text-align: center;
 
 	@mixin atMedium {
 		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+	&__less-t-margin {
+		padding-top: 10px;
 	}
 }

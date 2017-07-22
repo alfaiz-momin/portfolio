@@ -6,6 +6,23 @@
 	padding-top: 20px;
     color: #fff;
 
+    &__img {
+    	margin-top: 30%;
+    }
+
+    &__text {
+    	max-width: 500px;
+    	margin-left: 10%;
+    	text-align: justify;
+    	h3 {
+    		font-family: $heading;
+    	}
+    	p {
+    		font-family: $paragraph;
+    		font-size: 1.2rem;
+    	}
+    }
+
     @mixin atMedium {
     	padding-top: 100px;	
     }

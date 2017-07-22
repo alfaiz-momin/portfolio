@@ -703,6 +703,25 @@ a {
     color: #fff;
 }
 
+.about__img {
+    	margin-top: 30%;
+    }
+
+.about__text {
+    	max-width: 500px;
+    	margin-left: 10%;
+    	text-align: justify;
+    }
+
+.about__text h3 {
+    		font-family: 'Open Sans', sans-serif;
+    	}
+
+.about__text p {
+    		font-family: 'Work Sans', sans-serif;
+    		font-size: 1.2rem;
+    	}
+
 @media (min-width: 800px) {
 
 .about {
@@ -1061,14 +1080,20 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	padding-top: 25px;
+	padding-bottom: 25px;
 	text-align: center;
 }
 
 @media (min-width: 800px) {
 
 .section-title {
-		padding-top: 100px
+		padding-top: 100px;
+		padding-bottom: 50px
 }
+	}
+
+.section-title__less-t-margin {
+		padding-top: 10px;
 	}
 
 /* Do not edit modules/_sprite directly as it is generated 
