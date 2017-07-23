@@ -1,0 +1,10 @@
+.contact {
+	width: 100%;
+	height: auto;
+	background-color: $mainGreen;
+	position: relative;
+
+	&__inner {
+		padding-top: 100px;
+	}
+}

@@ -613,7 +613,7 @@ a {
 @media (min-width: 800px) {
 
 .project__btn {
-			margin: 50px 0px
+			margin: 0px 0px 50px 0px
 	}
 	}
 
@@ -702,6 +702,7 @@ a {
 	background-color: #454E56;
 	position: relative;
 	padding-top: 20px;
+    padding-bottom: 100px;
     color: #fff;
 }
 
@@ -738,6 +739,17 @@ a {
 .about {
     	padding-top: 100px
 }
+	}
+
+.contact {
+	width: 100%;
+	height: auto;
+	background-color: #329649;
+	position: relative;
+}
+
+.contact__inner {
+		padding-top: 100px;
 	}
 
 .btn{
