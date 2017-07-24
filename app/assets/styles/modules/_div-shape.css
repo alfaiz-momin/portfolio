@@ -8,7 +8,13 @@
 	background: inherit;
 	transform: skewY(8deg);
 
+	@mixin atSmall {
+		height: 80px;
+	}
 	@mixin atMedium {
+		height: 100px;
+	}
+	@mixin atLarge {
 		height: 100px;
 	}
 }
@@ -22,7 +28,13 @@
 	background: inherit;
 	transform: skewY(-8deg);
 
+	@mixin atSmall {
+		height: 80px;
+	}
 	@mixin atMedium {
+		height: 100px;
+	}
+	@mixin atLarge {
 		height: 100px;
 	}
 }

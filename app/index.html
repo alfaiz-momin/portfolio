@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Work+Sans:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" rel="stylesheet">
   <title>Alfaiz momin | Front End Web Developer</title>
   <meta name="keywords" content="Alfaiz momin, Front End Web Developer, freelancer web developer">
   <meta name="description" content="Alfaiz momin is a front end web developer. He work as a freelancer. He has skill set of HTML5, CSS3, JavaScript, etc.">
@@ -10,6 +10,8 @@
   <!-- build:css assets/style/style.css -->
   <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
   <!-- endbuild -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   <!-- build:js assets/scripts/Vender.js -->
   <script src="/temp/scripts/Vendor.js" type="text/javascript"></script>
@@ -30,13 +32,13 @@
 
     <div class="site-header__menu-content">
       <div class="site-header__btn-container">
-        <a href="#" class="btn open-modal">Hire Me</a>
+        <a href="#" class="btn btn__nav">Hire Me</a>
       </div>
       <nav class="primary-nav primary-nav__pull-right">
         <ul>
-          <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-          <li><a href="#features" id="features-link">Features</a></li>
-          <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+          <li><a href="#our-beginning" id="our-beginning-link">Project</a></li>
+          <li><a href="#features" id="features-link">About me</a></li>
+          <li><a href="#testimonials" id="testimonials-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -54,10 +56,10 @@
   </picture>
   <div class="large-hero__text-content">
     <div class="wrapper">
-      <h1 class="large-hero__title">Hello,</h1>
-      <h1 class="large-hero__subtitle">My name is Alfaiz Momin.</h1>
+      <h1 class="large-hero__title">Hello, My name is</h1>
+      <h1 class="large-hero__subtitle">Alfaiz Momin.</h1>
       <p class="large-hero__description">I am a Front End Web Developer</p>
-      <p><a href="#" class="btn btn--orange btn--large open-modal">Hire Me</a></p>
+      <p><a href="#" class="btn btn__large">Hire Me</a></p>
     </div>
   </div>
 </div>
@@ -75,7 +77,8 @@
     <div class="tab-box active" id="webpages">
       <!-- first row -->
       <div class="row">
-        <div class="row__large-6">
+        <h4 class="project__sub-heading">Web pages</h4>
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-page1-normal.jpg" alt="web-page1">
             <div class="project-text">
@@ -89,7 +92,7 @@
           </div>
         </div>
 
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-page2-normal.jpg" alt="web-page2">
             <div class="project-text">
@@ -106,7 +109,7 @@
 
       <!-- second row -->
       <div class="row row__t-padding">
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-page3-normal.jpg" alt="web-page3">
             <div class="project-text">
@@ -120,7 +123,7 @@
           </div>
         </div>
 
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-page4-normal.jpg" alt="web-page4">
             <div class="project-text">
@@ -142,7 +145,8 @@
     <div class="tab-box" id="webapps">
       <!-- first row -->
       <div class="row">
-        <div class="row__large-6">
+        <h4 class="project__sub-heading">Web Apps</h4>
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-app1-normal.jpg" alt="web-app1">
             <div class="project-text">
@@ -156,7 +160,7 @@
           </div>
         </div>
 
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-app2-normal.jpg" alt="web-app2">
             <div class="project-text">
@@ -174,7 +178,7 @@
 
       <!-- second row -->
       <div class="row row__t-padding">
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-app3-normal.jpg" alt="web-app3">
             <div class="project-text">
@@ -188,7 +192,7 @@
           </div>
         </div>
 
-        <div class="row__large-6">
+        <div class="row__medium-6">
           <div class="project-box">
             <img src="assets/images/web-app4-normal.jpg" alt="web-app4">
             <div class="project-text">
@@ -211,8 +215,8 @@
 <div class="about shape">
   <h1 class="section-title section-title__less-t-margin">About Me</h1>
   <div class="wrapper">
-    <div class="row row__gutters">
-      <div class="row__large-4">
+    <div class="row">
+      <div class="row__medium-4">
         <div class="about__img">
           <picture>
             <source data-srcset="assets/images/self-large.jpg" media="(min-width: 1020px)">
@@ -221,7 +225,7 @@
           </picture>
         </div>
       </div>
-      <div class="row__large-8">
+      <div class="row__medium-8">
         <div class="about__text">
           <p>
             My Name is Alfaiz Momin. I live in Mumbai, India. I am a Front end web developer. Working as a fulltime freelancer.
@@ -254,13 +258,36 @@
 
 <!--=== contact section start ===-->
 <div class="contact shape">
+  <h1 class="section-title">Contact Me</h1>
   <div class="wrapper">
-    <div class="row contact__inner">
-      <div class="row__large-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure excepturi adipisci animi, dolore reprehenderit saepe totam maxime ipsum, quas sint id quisquam quia eligendi similique tempore quasi voluptatibus ea. Voluptate aliquid, deserunt harum ea quibusdam aliquam numquam temporibus quisquam impedit dicta ratione ab exercitationem atque sint perferendis quas ad iure.</p>
+    <div class="row row__gutters contact__inner">
+      <div class="row__medium-6">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+        var uluru = {lat: 19.2403, lng: 73.1305};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+        </script>
       </div>
-      <div class="row__large-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quam ut, atque vitae laborum, ratione ex velit tempora dignissimos quas. Numquam consectetur facilis in, ipsum expedita facere repellat ducimus ad, doloribus nesciunt, deleniti commodi accusamus magni. Fuga officia dolores consequatur, enim eveniet, laudantium aperiam autem ratione quisquam animi asperiores vero.</p>
+      <div class="row__medium-6">
+        <div class="social">
+          <h2>Feel free to contact me :)</h2>
+          <p>Send me a Mail with your query or project discription. I will revert you back with solution or estimate.<br><strong>Note:</strong> Always discuss first before hiring me.</p>
+          <p>alfaizmomin[at]gmail.com</p>
+        </div>
+        <div class="social__links">
+          <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -268,16 +295,22 @@
 <!--=== contact section start ===-->
 
         <!-- Footer start ==================-->
-<!--         <footer class="site-footer">
-          <div class="wrapper">
-            <p><span class="site-footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
-          </div>
-        </footer> -->
+<footer class="site-footer">
+  <div class="wrapper">
+    <p><span class="site-footer__text">Copyright &copy; 2017 Alfaiz momin. All rights reserved.</span> <a href="#" class="btn btn__nav">Hire Me</a></p>
+  </div>
+</footer>
         <!-- Footer END ==================-->
 
-        <!-- build:js assets/scripts/App.js -->
-        <script  src="/temp/scripts/App.js" type="text/javascript"></script>
-        <!-- endbuild -->
+    <!-- google map api -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWAov4ZNBia2NYg6FcW9BAMHEhQrFJvyk&callback=initMap">
+    </script>
+    <!-- google map api -->
 
-      </body>
-      </html>
+<!-- build:js assets/scripts/App.js -->
+<script  src="/temp/scripts/App.js" type="text/javascript"></script>
+<!-- endbuild -->
+
+</body>
+</html>

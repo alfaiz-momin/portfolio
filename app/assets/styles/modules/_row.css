@@ -23,7 +23,11 @@
 	}
 
 	&__gutters > div {
-		padding-right: 100px;
+		padding-right: none;
+
+		@mixin atMedium {
+			padding-right: 100px;
+		}
 	}
 
 	&__gutters-small {

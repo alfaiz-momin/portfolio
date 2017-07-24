@@ -4,13 +4,29 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
-
+	margin: 0;
+	
+	@mixin atSmall {
+		padding-top: 50px;
+	}	
 	@mixin atMedium {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+	@mixin atLarge {
 		padding-top: 100px;
 		padding-bottom: 50px;
 	}
 
 	&__less-t-margin {
 		padding-top: 10px;
+
+		@mixin atSmall {
+			padding-top: 50px;
+		}
+		@mixin atMedium {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
 	}
 }

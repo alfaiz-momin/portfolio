@@ -105,7 +105,7 @@
 		transition: all .3s ease-out;
 		position: relative;
 		z-index: -10;
-		padding-top: 90px; 
+		padding-top: 80px; 
 		text-align: center;
 
 		@mixin atMedium {

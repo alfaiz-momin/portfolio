@@ -8,18 +8,26 @@
 
 	&__btn {
 		text-align: center;
-		margin: 20px 0px;
+		margin: 15px 0px;
+		font-family: $paragraph;
+		
 
 		@mixin atMedium {
 			margin: 0px 0px 50px 0px;
 		}
 		a {
-			margin: 10px;
+			background-color: transparent;
 		}
 	}
 
 	&__btn>.active {
-		background-color: $mainBlue;
+		background-color: $gray;
+	}
+
+	&__sub-heading {
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 10px;
 	}
 }
 
@@ -39,6 +47,10 @@
 	margin-bottom: 15px;
 
 	@mixin atMedium {
+		width: 300px;
+	}
+
+	@mixin atLarge {
 		width: 450px;
 	}
 }
