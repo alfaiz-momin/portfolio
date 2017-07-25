@@ -34,14 +34,16 @@
 	&__links {
 		text-align: center;
 		color: #fff;
-		transform: all 3s;
+		
 
-		i {
+		a {
 			margin: 5px;
+			color: #fff;
+			transition: color .3s;
 		}
-	}
 
-	&__links i:hover {
-		color: $mainOrange;
+		a:hover {
+			color: $gray;
+		}
 	}
 }

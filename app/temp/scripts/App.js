@@ -10443,8 +10443,6 @@ var StickyHeader = function () {
 
 		this.lazyImages = (0, _jquery2.default)(".lazyload");
 		this.siteHeader = (0, _jquery2.default)(".site-header");
-		this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
-		this.creatHeaderWaypoint();
 		this.pageSection = (0, _jquery2.default)(".page-section");
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.creatPageSectionWaypoint();
@@ -10463,22 +10461,6 @@ var StickyHeader = function () {
 		key: 'addSmoothScrooling',
 		value: function addSmoothScrooling() {
 			this.headerLinks.smoothScroll();
-		}
-	}, {
-		key: 'creatHeaderWaypoint',
-		value: function creatHeaderWaypoint() {
-			var that = this;
-
-			new Waypoint({
-				element: this.headerTriggerElement[0],
-				handler: function handler(direction) {
-					if (direction == "down") {
-						that.siteHeader.addClass("site-header--dark");
-					} else {
-						that.siteHeader.removeClass("site-header--dark");
-					}
-				}
-			});
 		}
 	}, {
 		key: 'creatPageSectionWaypoint',

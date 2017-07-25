@@ -795,7 +795,15 @@ a {
 
 .project__btn a {
 			background-color: transparent;
+			margin: 0;
 		}
+
+@media (min-width: 700px) {
+
+.project__btn a {
+				margin: 0 15px
+		}
+	}
 
 .project__btn>.active {
 		background-color: #454E56;
@@ -805,6 +813,15 @@ a {
 		margin: 0 auto;
 		text-align: center;
 		padding-bottom: 10px;
+		font-size: 1.2rem;
+		font-family: 'Work Sans', sans-serif;
+	}
+
+@media (min-width: 700px) {
+
+.project__sub-heading {
+			padding-bottom: 30px
+	}
 	}
 
 .tab-box {
@@ -1012,17 +1029,18 @@ a {
 .social__links {
 		text-align: center;
 		color: #fff;
-		-webkit-transform: all 3s;
-		        transform: all 3s;
 	}
 
-.social__links i {
+.social__links a {
 			margin: 5px;
+			color: #fff;
+			-webkit-transition: color .3s;
+			transition: color .3s;
 		}
 
-.social__links i:hover {
-		color: #d59541;
-	}
+.social__links a:hover {
+			color: #454E56;
+		}
 
 .btn{
 	background-color: transparent;
@@ -1117,55 +1135,6 @@ a {
 .wrapper__b-margin {
 			margin-bottom: 3.875rem
 	}
-	}
-
-.page-section {
-	padding: 1.2rem 0;
-}
-
-@media (min-width: 700px) {
-
-.page-section {
-		padding: 4.5rem 0
-}
-	}
-
-.page-section__no-b-padding-untill-medium {
-		padding-bottom: 0;
-	}
-
-@media (min-width: 700px) {
-
-.page-section__no-b-padding-untill-medium {
-			padding-bottom: 4.5rem
-	}
-	}
-
-.page-section__no-b-padding-untill-large {
-		padding-bottom: 0;
-	}
-
-@media (min-width: 1010px) {
-
-.page-section__no-b-padding-untill-large {
-			padding-bottom: 4.5rem
-	}
-	}
-
-.page-section__blue {
-		background-color: #000;
-		color: #fff;
-	}
-
-.page-section__testimonials {
-		background-color: #e0e6ef;
-	}
-
-@media (min-width: 1010px) {
-			.page-section__testimonials.lazyloaded {
-				background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
-				background-size: cover;
-			}
 	}
 
 .generic-content-container p {
@@ -1361,7 +1330,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 
 .site-header {
 		position: fixed;
-		background-color: rgba(0,0,0, .3)
+		background-color: rgba(0,0,0, .8)
 }
 	}
 
@@ -1383,7 +1352,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 
 .site-header__logo span {
-		color: #d59541;
+		color: #329649;
 		}
 
 .site-header__menu-icon {
@@ -1487,13 +1456,6 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 	}
 
-.site-header__menu-content--is-visible {
-			opacity: 1;
-			z-index: 1;
-			-webkit-transform: scale(1);
-			        transform: scale(1);
-		}
-
 .primary-nav {
 	padding-top: 10px;
 }
@@ -1568,7 +1530,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 
 			.primary-nav a.is-current-link {
-				color: #fabb69;
+				border-bottom: 2px solid #329649;
 			}
 	}
 
