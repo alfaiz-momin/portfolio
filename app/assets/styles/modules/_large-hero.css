@@ -59,11 +59,15 @@
 	color: #fff;
 	font-size: 1rem;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-	max-width: 30rem;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	letter-spacing: 2px;
 	font-family: $paragraph;
+
+	@mixin atMedium {
+		width: 32ch;
+	}
 }
 
 	@mixin atSmall {
@@ -72,3 +76,32 @@
 
 }
 
+/*text animation*/
+
+.text-anim {
+
+	@mixin atMedium {
+		animation: typing-text 5s steps(32), blink 0.5s infinite alternate;
+		overflow: hidden;
+		white-space: nowrap;
+		border-right: 2px solid #fff;
+	}
+}
+
+@keyframes typing-text {
+	from{
+		width: 0;
+	}
+	to{
+		width: 32ch;
+	}
+}
+
+@keyframes blink {
+	from{
+	border-color: transparent;
+	}
+	to{
+	border-color: #fff;
+	}
+}

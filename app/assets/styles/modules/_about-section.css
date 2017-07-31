@@ -44,6 +44,11 @@
             margin-left: 10%;
         }
 
+        @mixin atLarge {
+            max-width: 600px;
+            margin-left: 15%;
+        }
+
     	h3 {
     		font-family: $heading;
     	}
