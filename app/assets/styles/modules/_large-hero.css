@@ -2,12 +2,14 @@
 .large-hero {
 	height: 90vh;
 	position: relative;
+	background-color: #000;
 
 &__image {
 	display: block;
 	min-height: 100%;
 	width: 100%;
 	position: fixed;
+	opacity: 0.3;
 
 	@mixin atSmall {
 	height: 500px;

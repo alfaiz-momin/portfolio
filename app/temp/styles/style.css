@@ -617,6 +617,7 @@ a {
 .large-hero {
 	height: 90vh;
 	position: relative;
+	background-color: #000;
 
 }
 
@@ -625,6 +626,7 @@ a {
 	min-height: 100%;
 	width: 100%;
 	position: fixed;
+	opacity: 0.3;
 }
 
 @media (min-width: 530px) {
@@ -1505,7 +1507,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		transition: all .3s ease-out;
 		position: relative;
 		z-index: -10;
-		padding-top: 80px; 
+		padding-top: 60px; 
 		text-align: center;
 	}
 
@@ -1519,6 +1521,13 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 			        transform: scale(1)
 	}
 	}
+
+.site-header__menu-content--is-visible {
+			opacity: 1;
+			z-index: 1;
+			-webkit-transform: scale(1);
+			        transform: scale(1);
+		}
 
 .primary-nav {
 	padding-top: 10px;
