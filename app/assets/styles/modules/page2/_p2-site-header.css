@@ -1,0 +1,26 @@
+.p2-site-header {
+	background-color: $mainBlue;
+	font-family: $paragraph;
+	width: 100%;
+	display: block;
+	position: fixed;
+
+	&__menu-content {
+		float: right;
+		padding-top: .5rem;
+	}
+
+	&__logo {
+		padding-top: 5px;
+		color: #fff;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		padding: 0;
+		line-height: 15px;
+
+		span {
+		color: $mainGreen;
+		}
+	}
+}
