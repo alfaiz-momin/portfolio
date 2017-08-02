@@ -3,9 +3,15 @@
   background-color: #FFFFFF;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 50px 0;
+  height: auto;
   text-align: center;
   width: 100%;
+
+  @mixin atLarge {
+    height: 800px;
+  }
+
   h1 {
     color: $mainGreen;
     font-family: $heading;
@@ -32,34 +38,54 @@
   margin-top: 150px;
   width: 100%;
 }
+
 .single_pricelist {
   border: 1px solid #DCDCDC;
   display: inline;
   float: left;
-  height: 400px;
+  height: 450px;
+  margin-top: 0px;
+  margin-bottom: 150px;
   padding-bottom: 20px;
   width: 80%;
   margin-left: 12%;
   transition:all .5s ease-out;
+
+  @mixin atMedium {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  @mixin atLarge {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
 }
+
 .single_pricelist:hover .single_pricelist_box>p{
-  background: none repeat scroll 0 0 $mainGreen;
+  @mixin atLarge {
+    background: none repeat scroll 0 0 $mainGreen;
+  }
 }
 .single_pricelist:hover{
-  height: 450px;
-  margin-top: -30px;
+  @mixin atLarge {
+    height: 450px;
+    margin-top: -30px;
+  }
 }
 .single_pricelist:hover .price_select{
-  background-color: $mainGreen;
-  color: #FFFFFF;
-  display: inline-block;
-  font-size: 18px;
-  height: 37px;
-  margin-top: 15px;
-  padding-top: 5px;
-  text-align: center;
-  width: 92px; 
-  visibility: visible;
+  @mixin atLarge {
+    background-color: $mainGreen;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    height: 37px;
+    margin-top: 15px;
+    padding-top: 5px;
+    text-align: center;
+    width: 92px; 
+    visibility: visible;
+  }
 }
 .single_pricelist_box {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -101,19 +127,26 @@
   text-align: left;
   font-family: $paragraph;
 }
-.single_pricelist_content p > i {
-  color: #FFD200;
-  font-size: 18px;
-  margin-right: 12px;
-  text-align: center;
-  width: 13px;
-}
+
 .price_select {
   background-color: $mainGreen;
-  visibility: hidden;
+  visibility: visible;
   border: 2px solid #fff;
   border-radius: 20px;
   color: #fff;
+  bottom: 0px;
+  padding: 10px 25px;
+  position: relative;
   font-family: $paragraph;
   text-decoration: none;
+
+  @mixin atLarge {
+    visibility: hidden;
+  }
+}
+
+.blank-space {
+width: 100%;
+height: 500px;
+background-color: red;
 }

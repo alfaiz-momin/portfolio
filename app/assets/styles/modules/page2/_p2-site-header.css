@@ -19,6 +19,11 @@
 		padding: 0;
 		line-height: 15px;
 
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+
 		span {
 		color: $mainGreen;
 		}

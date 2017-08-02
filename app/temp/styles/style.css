@@ -1804,15 +1804,28 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		line-height: 15px;
 	}
 
+.p2-site-header__logo a{
+			text-decoration: none;
+			color: #fff;
+		}
+
 .p2-site-header__logo span {
 		color: #329649;
 		}
 
 .p3-text-box {
 	margin: 0 auto;
-	margin-top: 10%;
-	max-width: 65%;
+	margin-top: 20%;
+	max-width: 90%;
 }
+
+@media (min-width: 700px) {
+
+.p3-text-box {
+		max-width: 65%;
+		margin-top: 10%
+}
+	}
 
 .p3-text-box h1, .p3-text-box h2, .p3-text-box h3, .p3-text-box h4 {
 		font-family: 'Open Sans', sans-serif;
@@ -1827,18 +1840,58 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 
 .p3-text-box__heading {
 		margin: 0 auto;
-		margin-bottom: 4rem;
-		width: 200px;
+		margin-bottom: 2rem;
+		width: 100%;
+		text-align: center;
 	}
+
+@media (min-width: 700px) {
+
+.p3-text-box__heading {
+			margin-bottom: 4rem;
+			width: 200px
+	}
+	}
+
+.p3-text-box__red {
+		margin-bottom: 50px;
+	}
+
+.p3-text-box__red h2, .p3-text-box__red h3 {
+			font-family: 'Open Sans', sans-serif;
+			color: #d59541;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+.p3-text-box__red ul{
+			margin: 0 auto;
+			width: 250px;
+		}
+
+.p3-text-box__red ul>li{
+			color: #d59541;
+			font-family: 'Work Sans', sans-serif;
+			line-height: 25px;
+			font-weight: 600;
+		}
 
 #priceList {
   background-color: #FFFFFF;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 50px 0;
+  height: auto;
   text-align: center;
   width: 100%;
 }
+
+@media (min-width: 1010px) {
+
+#priceList {
+    height: 800px
+}
+	}
 
 #priceList h1 {
     color: #329649;
@@ -1871,35 +1924,65 @@ automatically by Gulp. instead edit gulp/templates/sprite */
   border: 1px solid #DCDCDC;
   display: inline;
   float: left;
-  height: 400px;
+  height: 450px;
+  margin-top: 0px;
+  margin-bottom: 150px;
   padding-bottom: 20px;
   width: 80%;
   margin-left: 12%;
   -webkit-transition:all .5s ease-out;
   transition:all .5s ease-out;
+
 }
+
+@media (min-width: 700px) {
+
+.single_pricelist {
+    margin-top: 0px;
+    margin-bottom: 100px
+
+}
+	}
+
+@media (min-width: 1010px) {
+
+.single_pricelist {
+    margin-top: 0px;
+    margin-bottom: 0px
+
+}
+	}
+
+@media (min-width: 1010px) {
 
 .single_pricelist:hover .single_pricelist_box>p{
-  background: none repeat scroll 0 0 #329649;
+    background: none repeat scroll 0 0 #329649
 }
+	}
+
+@media (min-width: 1010px) {
 
 .single_pricelist:hover{
-  height: 450px;
-  margin-top: -30px;
+    height: 450px;
+    margin-top: -30px
 }
+	}
+
+@media (min-width: 1010px) {
 
 .single_pricelist:hover .price_select{
-  background-color: #329649;
-  color: #FFFFFF;
-  display: inline-block;
-  font-size: 18px;
-  height: 37px;
-  margin-top: 15px;
-  padding-top: 5px;
-  text-align: center;
-  width: 92px; 
-  visibility: visible;
+    background-color: #329649;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    height: 37px;
+    margin-top: 15px;
+    padding-top: 5px;
+    text-align: center;
+    width: 92px; 
+    visibility: visible
 }
+	}
 
 .single_pricelist_box {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -1947,20 +2030,28 @@ automatically by Gulp. instead edit gulp/templates/sprite */
   font-family: 'Work Sans', sans-serif;
 }
 
-.single_pricelist_content p > i {
-  color: #FFD200;
-  font-size: 18px;
-  margin-right: 12px;
-  text-align: center;
-  width: 13px;
-}
-
 .price_select {
   background-color: #329649;
-  visibility: hidden;
+  visibility: visible;
   border: 2px solid #fff;
   border-radius: 20px;
   color: #fff;
+  bottom: 0px;
+  padding: 10px 25px;
+  position: relative;
   font-family: 'Work Sans', sans-serif;
   text-decoration: none;
+}
+
+@media (min-width: 1010px) {
+
+.price_select {
+    visibility: hidden
+}
+	}
+
+.blank-space {
+width: 100%;
+height: 500px;
+background-color: red;
 }
