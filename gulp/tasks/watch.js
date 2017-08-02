@@ -11,7 +11,7 @@ gulp.task('watch', function(){
 		}
 	});
 
-	watch('./app/hireme.html', function(){
+	watch('./app/index.html', function(){
 		browserSync.reload();
 	});
 
