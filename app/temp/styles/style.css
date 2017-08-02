@@ -1409,6 +1409,10 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 }
 	}
 
+.site-header__btn-container {
+		padding-top: .3rem;
+	}
+
 @media (min-width: 700px) {
 
 .site-header__btn-container {
