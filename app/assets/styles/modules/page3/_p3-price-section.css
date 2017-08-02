@@ -1,0 +1,119 @@
+
+#priceList {
+  background-color: #FFFFFF;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $mainGreen;
+    font-family: $heading;
+  }
+}
+
+#priceList>p{
+  color: #606060; 
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-family: $paragraph;
+  padding: 0 10%;
+}
+.pricelist_area {
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.single_pricelist_area {
+  display: inline;
+  float: left;
+  margin-top: 150px;
+  width: 100%;
+}
+.single_pricelist {
+  border: 1px solid #DCDCDC;
+  display: inline;
+  float: left;
+  height: 400px;
+  padding-bottom: 20px;
+  width: 80%;
+  margin-left: 12%;
+  transition:all .5s ease-out;
+}
+.single_pricelist:hover .single_pricelist_box>p{
+  background: none repeat scroll 0 0 $mainGreen;
+}
+.single_pricelist:hover{
+  height: 450px;
+  margin-top: -30px;
+}
+.single_pricelist:hover .price_select{
+  background-color: $mainGreen;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 18px;
+  height: 37px;
+  margin-top: 15px;
+  padding-top: 5px;
+  text-align: center;
+  width: 92px; 
+  visibility: visible;
+}
+.single_pricelist_box {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #DCDCDC;
+  border-radius: 100%;
+  height: 237px;
+  margin: -83px auto 0;
+  padding: 18px;
+  text-align: center;
+  width: 237px;
+}
+.single_pricelist_box p {
+  background: rgba(51,51,51,0.7);
+  border-radius: 100%;
+  color: #FFFFFF !important;
+  font-size: 30px;
+  height: 100%;
+  margin-top: 0;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  width: 100%;  
+  transition: all 0.5s;
+}
+.single_pricelist_content {
+  display: inline;
+  float: left;
+  margin-top: 15px;
+  width: 100%;
+}
+.single_pricelist_content h1{
+  color: $mainGreen;  
+  font-size: 25px;
+  font-family: $heading;
+}
+.single_pricelist_content p {
+  color: #606060; 
+  font-size: 15px;
+  padding: 0 40px;
+  text-align: left;
+  font-family: $paragraph;
+}
+.single_pricelist_content p > i {
+  color: #FFD200;
+  font-size: 18px;
+  margin-right: 12px;
+  text-align: center;
+  width: 13px;
+}
+.price_select {
+  background-color: $mainGreen;
+  visibility: hidden;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-family: $paragraph;
+  text-decoration: none;
+}
