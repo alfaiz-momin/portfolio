@@ -80,6 +80,29 @@
 	transform: scale(0);
 	opacity: 0;
 	transition: .5s;
+	
+	&__link {
+		margin-top: 10%;
+
+		@mixin atMedium {
+			margin-top: 15%;
+		}
+
+		@mixin atLarge {
+			margin-top: 25%;
+		}
+
+		a {
+			width: 25px;
+			padding: 5px 25px;
+			border: 1px solid #fff;
+			border-radius: 15px;
+			background-color: $mainGreen;
+			cursor: pointer;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
 
 	p {
 		text-align: center;
@@ -88,11 +111,14 @@
 	ul {
 		position: absolute;
 		top: 20%;
-		left: 10%;
+		left: 5%;
 		transform-origin: top left;
 
 		@mixin atMedium {
 			top: 20%;
+			left: 10%;
+		}
+		@mixin atLarge {
 			left: 20%;
 		}
 

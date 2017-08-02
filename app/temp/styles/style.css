@@ -930,6 +930,35 @@ a {
 	transition: .5s;
 }
 
+.project-text__link {
+		margin-top: 10%;
+	}
+
+@media (min-width: 700px) {
+
+.project-text__link {
+			margin-top: 15%
+	}
+	}
+
+@media (min-width: 1010px) {
+
+.project-text__link {
+			margin-top: 25%
+	}
+	}
+
+.project-text__link a {
+			width: 25px;
+			padding: 5px 25px;
+			border: 1px solid #fff;
+			border-radius: 15px;
+			background-color: #329649;
+			cursor: pointer;
+			color: #fff;
+			text-decoration: none;
+		}
+
 .project-text p {
 		text-align: center;
 	}
@@ -937,7 +966,7 @@ a {
 .project-text ul {
 		position: absolute;
 		top: 20%;
-		left: 10%;
+		left: 5%;
 		-webkit-transform-origin: top left;
 		        transform-origin: top left;
 	}
@@ -946,6 +975,13 @@ a {
 
 .project-text ul {
 			top: 20%;
+			left: 10%
+	}
+	}
+
+@media (min-width: 1010px) {
+
+.project-text ul {
 			left: 20%
 	}
 	}
