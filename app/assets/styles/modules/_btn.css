@@ -12,6 +12,7 @@
 		padding: .3rem 1rem;
 		background-color: $mainGreen;
 		margin-bottom: 5px;
+		font-family: $paragraph;
 	}
 
 	&__large {
