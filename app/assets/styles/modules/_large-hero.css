@@ -68,10 +68,13 @@
 	font-family: $paragraph;
 
 	@mixin atMedium {
-		width: 32ch;
+		width: 28ch;
 	}
 }
 
+&__info{
+		width: 100%;
+}
 	@mixin atSmall {
 		font-size: 1.875rem;
 	}
@@ -83,7 +86,7 @@
 .text-anim {
 
 	@mixin atMedium {
-		animation: typing-text 5s steps(32), blink 0.5s infinite alternate;
+		animation: typing-text 5s steps(28), blink 0.5s infinite alternate;
 		overflow: hidden;
 		white-space: nowrap;
 		border-right: 2px solid #fff;
@@ -95,7 +98,7 @@
 		width: 0;
 	}
 	to{
-		width: 32ch;
+		width: 28ch;
 	}
 }
 
@@ -106,4 +109,11 @@
 	to{
 	border-color: #fff;
 	}
+}
+
+.hero-hr {
+	width: 15%;
+	height: 2px;
+	margin: 0 auto;
+	background-color: #fff;
 }
