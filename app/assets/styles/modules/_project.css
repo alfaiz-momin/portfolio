@@ -83,6 +83,7 @@
 	
 	&__link {
 		margin-top: 10%;
+		font-family: $paragraph;
 
 		@mixin atMedium {
 			margin-top: 15%;
