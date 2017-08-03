@@ -10349,10 +10349,6 @@ var _ProjectTabs2 = _interopRequireDefault(_ProjectTabs);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-// new RevealOnScroll($(".feature-item"), "20%");
-// new RevealOnScroll($(".testimonial"), "60%");
-
-// import RevealOnScroll from './modules/RevealOnScroll';
 var stickyHeader = new _StickyHeader2.default();
 var projectTabs = new _ProjectTabs2.default();
 
