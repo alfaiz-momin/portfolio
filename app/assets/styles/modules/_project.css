@@ -68,6 +68,10 @@
 
 .project-box img {
 	width: 100%;
+	height: 200px;
+	@mixin atMedium {
+		height: auto;
+	}
 }
 
 .project-text {

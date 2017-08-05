@@ -925,7 +925,15 @@ a {
 
 .project-box img {
 	width: 100%;
+	height: 200px;
 }
+
+@media (min-width: 700px) {
+
+.project-box img {
+		height: auto
+}
+	}
 
 .project-text {
 	position: absolute;
