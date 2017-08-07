@@ -10,11 +10,11 @@
   <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
   <!-- endbuild -->
   
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" async rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" async>
 
   <!-- build:js assets/scripts/Vender.js -->
-  <script src="/temp/scripts/Vendor.js" type="text/javascript"></script>
+  <script src="/temp/scripts/Vendor.js" type="text/javascript" defer></script>
   <!-- endbuild -->
 
 </head>
@@ -282,7 +282,7 @@
     <div class="row row__gutters contact__inner">
       <div class="row__medium-6">
         <div id="map"></div>
-        <script>
+        <script async>
           function initMap() {
         var uluru = {lat: 19.2403, lng: 73.1305};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -322,13 +322,13 @@
 <!-- Footer END ==================-->
 
     <!-- google map api -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWAov4ZNBia2NYg6FcW9BAMHEhQrFJvyk&callback=initMap">
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWAov4ZNBia2NYg6FcW9BAMHEhQrFJvyk&callback=initMap" async>
     </script>
     <!-- google map api -->
 
 <!-- build:js assets/scripts/App.js -->
-<script  src="/temp/scripts/App.js" type="text/javascript"></script>
+<script src="/temp/scripts/App.js" type="text/javascript" async></script>
 <!-- endbuild -->
 
 </body>
