@@ -5,15 +5,7 @@
   <title>Alfaiz momin | Hire me</title>
   <meta name="keywords" content="Alfaiz momin, Front End Web Developer, freelancer web developer">
   <meta name="description" content="Alfaiz momin is a front end web developer. you can hire him for your projects from here">
-
   <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-  <!-- build:css assets/style/style.css -->
-  <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
-  <!-- endbuild -->
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" async rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" async>
-
 </head>
 <body>
 <!--=== Navbar start ===-->
@@ -70,7 +62,7 @@
                <div class="single_pricelist_content">
                  <h1>Guru.com</h1>
                  <p>PSD to HTML5 responsive.</p>
-                 <p>HTML5 E-mail.</p>
+                 <p>Google AMP page.</p>
                  <p>Wordpress (simple website).</p>
                  <p>Angular (SPA) comming soon.</p>
                  <a class="price_select" href="https://www.guru.com/freelancers/alfaiz-momin">Visit</a>
@@ -85,7 +77,7 @@
              <div class="single_pricelist_content">
                <h1>Freelancer.com</h1>
                <p>PSD to HTML5 responsive.</p>
-               <p>HTML5 E-mail.</p>
+               <p>Google AMP page.</p>
                <p>Wordpress (simple website).</p>
                <p>Angular (SPA) comming soon.</p>
                <a class="price_select" href="https://www.freelancer.in/u/alfaizmomin">Visit</a>
@@ -100,7 +92,7 @@
            <div class="single_pricelist_content">
              <h1>PeoplePerHour.com</h1>
              <p>PSD to HTML5 responsive.</p>
-             <p>HTML5 E-mail.</p>
+             <p>Google AMP page.</p>
              <p>Wordpress (simple website).</p>
              <p>Angular (SPA) comming soon.</p>
              <a class="price_select" href="https://www.peopleperhour.com/freelancer/alfaiz/front-end-web-developer/1782182">Visit</a>
@@ -117,16 +109,37 @@
 
 <div class="p3-text-box__red">
   <div class="row">
-    <div class="p3-text-box__inner">
-      <h2 class="p3-text-box__heading">Note:</h2>
-      <h3>I do not take these type of projects:</h3>
-        <ul>
-          <li>Religious website</li>
-          <li>Dating website</li>
-          <li>Black Marketting website</li>
-          <li>Gambling related website</li>
-          <li>Adult content website</li> 
-        </ul>
+    <div class="row__medium-6">
+      <div class="p3-text-box__inner">
+        <h2 class="p3-text-box__heading">Note:</h2>
+        <h3>I do not take these type of projects:</h3>
+          <ul>
+            <li>Religious website</li>
+            <li>Dating website</li>
+            <li>Black Marketting website</li>
+            <li>Gambling related website</li>
+            <li>Adult content website</li> 
+          </ul>
+      </div>
+    </div>
+    <div class="row__medium-6">
+      <!--
+          PeoplePerHour Profile Widget
+          The div#pph-hire me is the element
+          where the iframe will be inserted.
+          You may move this element wherever
+          you need to display the widget
+      -->
+      <div id="pph-hireme"></div>2
+      <script async type="text/javascript">
+      (function(d, s) {
+          var useSSL = 'https:' == document.location.protocol;
+          var js, where = d.getElementsByTagName(s)[0],
+          js = d.createElement(s);
+          js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/981794799/1782182.js?width=300&height=255&orientation=vertical&theme=light&hourlies=383678&rnd='+parseInt(Math.random()*10000, 10);
+          try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+      }(document, 'script'));
+      </script>
     </div>
   </div>
 </div>
@@ -141,6 +154,21 @@
   </div>
 </footer>
 <!-- Footer END ==================-->
+    <!-- build:css assets/style/style.css -->
+    <link rel="stylesheet" type="text/css" href="temp/styles/style.css">
+    <!-- endbuild -->
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!-- Analytics -->
+<script async>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81796907-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Analytics -->
 </body>
 </html>

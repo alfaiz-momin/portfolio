@@ -1,0 +1,5 @@
+$color1: #06110c;
+$color2: #133726;
+$color3: #205e3f;
+$color4: #2c8559;
+$color5: #37ac73;
