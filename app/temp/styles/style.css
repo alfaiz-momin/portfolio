@@ -723,6 +723,8 @@ a {
 @media (min-width: 700px) {
 
 .text-anim {
+		-webkit-animation-delay: 3s;
+		        animation-delay: 3s;
 		-webkit-animation: typing-text 5s steps(28), blink 0.5s infinite alternate;
 		        animation: typing-text 5s steps(28), blink 0.5s infinite alternate;
 		overflow: hidden;
@@ -1031,7 +1033,7 @@ a {
 		margin-top: 5%;
         margin-bottom: 5%;
     	height: 180px;
-    	border: 5px solid #9E9E9E;
+        border-radius: 25px;
     	-webkit-box-shadow: 6px 6px 10px 5px #232627;
     	        box-shadow: 6px 6px 10px 5px #232627;
 		}
