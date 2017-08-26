@@ -1,6 +1,6 @@
 
 .large-hero {
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 	background-color: #000;
 
@@ -117,4 +117,18 @@
 	height: 2px;
 	margin: 0 auto;
 	background-color: #fff;
+}
+.scroll-dwon {
+	font-family: $paragraph;
+	color: $mainGreen;
+	font-size: 1rem;
+	margin: 0;
+
+	&--t-margin {
+		margin-top: 15%;
+
+		@mixin atLarge {
+			margin-top: 5%;
+		}
+	}
 }

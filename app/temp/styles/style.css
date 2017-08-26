@@ -449,6 +449,12 @@ template {
   display: none;
 }
 
+/*Green #329649*/
+
+/*Green #1abc9c*/
+
+/*gray #454E56*/
+
 .row::after {
 		content:"";
 		clear: both;
@@ -615,7 +621,7 @@ a {
 }
 
 .large-hero {
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 	background-color: #000;
 
@@ -776,74 +782,92 @@ a {
 	background-color: #fff;
 }
 
-.shape:before {
+.scroll-dwon {
+	font-family: 'Work Sans', sans-serif;
+	color: #16a085;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.scroll-dwon--t-margin {
+		margin-top: 15%;
+	}
+
+@media (min-width: 1010px) {
+
+.scroll-dwon--t-margin {
+			margin-top: 5%
+	}
+	}
+
+.shapeBefore:before {
 	content: '';
-	width: 50%;
+	width: 100%;
 	height: 65px;
 	position: absolute;
-	top: -48px;
+	top: -38px;
 	left: 0;
 	background: inherit;
-	-webkit-transform: skewY(8deg);
-	        transform: skewY(8deg);
+	-webkit-transform: skewY(2deg);
+	        transform: skewY(2deg);
 }
 
 @media (min-width: 530px) {
 
-.shape:before {
+.shapeBefore:before {
 		height: 80px
 }
 	}
 
 @media (min-width: 700px) {
 
-.shape:before {
+.shapeBefore:before {
 		height: 100px
 }
 	}
 
 @media (min-width: 1010px) {
 
-.shape:before {
+.shapeBefore:before {
 		height: 100px
 }
 	}
 
-.shape:after {
+.shapeAfter:after {
 	content: '';
-	width: 50%;
+	width: 100%;
 	height: 65px;
 	position: absolute;
-	top: -48px;
+	top: -38px;
 	right: 0;
 	background: inherit;
-	-webkit-transform: skewY(-8deg);
-	        transform: skewY(-8deg);
+	-webkit-transform: skewY(-2deg);
+	        transform: skewY(-2deg);
 }
 
 @media (min-width: 530px) {
 
-.shape:after {
+.shapeAfter:after {
 		height: 80px
 }
 	}
 
 @media (min-width: 700px) {
 
-.shape:after {
+.shapeAfter:after {
 		height: 100px
 }
 	}
 
 @media (min-width: 1010px) {
 
-.shape:after {
+.shapeAfter:after {
 		height: 100px
 }
 	}
 
 .project {
-	background: #329649;
+	background: #7f8c8d;
 	width: 100%;
 	height: auto;
 	color: #fff;
@@ -877,7 +901,7 @@ a {
 	}
 
 .project__btn>.active {
-		background-color: #454E56;
+		background-color: #16a085;
 	}
 
 .project__sub-heading {
@@ -975,7 +999,7 @@ a {
 			padding: 5px 25px;
 			border: 1px solid #fff;
 			border-radius: 15px;
-			background-color: #329649;
+			background-color: #16a085;
 			cursor: pointer;
 			color: #fff;
 			text-decoration: none;
@@ -1021,52 +1045,31 @@ a {
 .about {
 	width: 100%;
 	height: auto;
-	background-color: #454E56;
+	background-color: #16a085;
 	position: relative;
-	padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 100px;
     color: #fff;
 }
 
+.about__img {
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
 .about__img img {
-		width: 100%;
-		margin-top: 5%;
-        margin-bottom: 5%;
-    	height: 180px;
-        border-radius: 25px;
+		width: 250px;
+    	height: 250px;
+        border-radius: 50%;
     	-webkit-box-shadow: 6px 6px 10px 5px #232627;
     	        box-shadow: 6px 6px 10px 5px #232627;
 		}
 
-@media (min-width: 530px) {
-
-.about__img img {
-                height: 350px
-		}
-	}
-
-@media (min-width: 700px) {
-
-.about__img img {
-                margin-top: 25%;
-                margin-bottom: 0;
-                height: 300px
-		}
-	}
-
-@media (min-width: 1010px) {
-
-.about__img img {
-              margin-top: 30%;
-              margin-bottom: 0;
-              height: 500px
-		}
-	}
-
 .about__text {
-    	max-width: auto;
     	margin-left: 0;
         padding: 0px 5px;
+        padding-top: 5%;
     	text-align: justify;
     }
 
@@ -1081,8 +1084,7 @@ a {
 @media (min-width: 1010px) {
 
 .about__text {
-            max-width: 600px;
-            margin-left: 15%
+            max-width: 600px
     }
 	}
 
@@ -1103,15 +1105,9 @@ a {
 	}
 
 .about__text li {
+            font-size: 1.2rem;
     		font-family: 'Work Sans', sans-serif;
     	}
-
-@media (min-width: 700px) {
-
-.about {
-    	padding-top: 100px
-}
-	}
 
 .resume-btn {
     text-align: center;
@@ -1120,28 +1116,12 @@ a {
 .contact {
 	width: 100%;
 	height: auto;
-	background-color: #329649;
+	background-color: #16a085;
 	position: relative;
 	padding-bottom: 100px;
 }
 
-#map {
-	width: 100%;
-	height: 200px;
-	display: none;
-}
-
-@media (min-width: 700px) {
-
-#map {
-		width: 100%;
-		height: 350px;
-		display: block
-}
-	}
-
 .social {
-	text-align: center;
 	color: #fff;
 }
 
@@ -1157,18 +1137,106 @@ a {
 .social__links {
 		text-align: center;
 		color: #fff;
+		margin-top: 30px;
 	}
 
-.social__links a {
-			margin: 5px;
-			color: #fff;
-			-webkit-transition: color .3s;
-			transition: color .3s;
+.social__links h2 {
+			font-family: 'Work Sans', sans-serif;
+			margin: 0 auto;
+			margin-bottom: 50px;
 		}
 
-.social__links a:hover {
-			color: #454E56;
+.social__links li {
+			list-style: none;
+			font-family: 'Work Sans', sans-serif;
+			width: 45%;
+			margin: 0 auto;
+			margin-bottom: 25px;
+			display: block;
+			position: relative;
 		}
+
+.social__links a {
+			width: 250px;
+			display: block;
+			margin: 5px;
+			color: #fff;
+			text-decoration: none;
+			-webkit-transition: color .3s;
+			transition: color .3s;
+			-webkit-perspective: 1000px;
+			        perspective: 1000px;
+		}
+
+.social__links a:hover .link-icon {
+			-webkit-transform: rotateY(0deg);
+			        transform: rotateY(0deg);
+		}
+
+.link-name {
+	padding: 10px;
+	width: 180px;
+	font-size: 1.2rem;
+	position: relative;
+	border: 2px solid #fff;
+	background-color: #7f8c8d;
+	display: block;
+}
+
+.link-icon {
+	float: right;
+	top: -46px;
+	left: -31px;
+	padding: 5px;
+	position: relative;
+	border: 2px solid #fff;
+	border-left: none;
+	display: block;
+	-webkit-transform-origin: left;
+	        transform-origin: left;
+	-webkit-transition: .3s transform ease-in-out;
+	transition: .3s transform ease-in-out;
+	-webkit-transform: rotateY(90deg);
+	        transform: rotateY(90deg);
+}
+
+/*Form*/
+
+.form-group {
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.form-group label{
+		display: block;
+		margin-bottom: 5px;
+	}
+
+.form-group input{
+		display: block;
+		width: 80%;
+		height: 50px;
+		margin-bottom: 10px;
+		padding: 5px;
+		border: none; 
+		border-radius: 10px;
+	}
+
+.form-group input:focus {
+	    background-color: #7f8c8d;
+	    color: #fff;
+	}
+
+.form-group textarea {
+		display: block;
+		width: 80%;
+		border: none;
+		padding: 5px;
+		border-radius: 10px;
+	}
 
 .btn{
 	background-color: transparent;
@@ -1184,7 +1252,7 @@ a {
 
 .btn__nav {
 		padding: .3rem 1rem;
-		background-color: #329649;
+		background-color: #16a085;
 		margin-bottom: 5px;
 		font-family: 'Work Sans', sans-serif;
 	}
@@ -1201,9 +1269,19 @@ a {
 	}
 	}
 
+.btn-form {
+		width: 80%;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
 .btn__large:hover {
-	background-color: #329649;
+	background-color: #16a085;
 	padding: .8rem 3rem;
+}
+
+.btn-form:hover {
+	background-color: #7f8c8d;
 }
 
 .wrapper {
@@ -1319,7 +1397,6 @@ a {
 @media (min-width: 1010px) {
 
 .section-title {
-		padding-top: 100px;
 		padding-bottom: 50px
 }
 	}
@@ -1427,7 +1504,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 }
 
 .site-footer {
-	background-color: #454E56;
+	background-color: #7f8c8d;
 	color: #fff;
 	padding: .5rem 0;
 	text-align: center;
@@ -1499,7 +1576,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		}
 
 .site-header__logo span {
-		color: #329649;
+		color: #16a085;
 		}
 
 .site-header__menu-icon {
@@ -1672,7 +1749,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		display: block;
 		padding: 5px 8px;
 		font-size: .8rem;
-		background-color: rgba(50,150,73, .5);
+		background-color: rgba(22,160,133, .5);
 	}
 
 @media (min-width: 700px) {
@@ -1684,7 +1761,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 
 			.primary-nav a.is-current-link {
-				border-bottom: 2px solid #329649;
+				border-bottom: 2px solid #16a085;
 			}
 	}
 
@@ -1838,17 +1915,17 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 .p2__project-box--btn a {
 			padding: 10px 15px;
 			font-weight: 600;
-			border: 2px solid #329649;
+			border: 2px solid #16a085;
 			border-radius: 25px;
 			background-color: transparent;
 			text-decoration: none;
-			color: #329649;
+			color: #16a085;
 			cursor: pointer;
 		}
 
 .p2__project-box--btn a:hover {
 			color: #fff;
-			background-color: #329649;
+			background-color: #16a085;
 		}
 
 .p2-site-header {
@@ -1880,7 +1957,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 		}
 
 .p2-site-header__logo span {
-		color: #329649;
+		color: #16a085;
 		}
 
 .p3-text-box {
@@ -1899,7 +1976,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 
 .p3-text-box h1, .p3-text-box h2, .p3-text-box h3, .p3-text-box h4 {
 		font-family: 'Open Sans', sans-serif;
-		color: #329649;
+		color: #16a085;
 	}
 
 .p3-text-box p {
@@ -1965,7 +2042,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 	}
 
 #priceList h1 {
-    color: #329649;
+    color: #16a085;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -2029,7 +2106,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .single_pricelist:hover .single_pricelist_box>p{
-    background: none repeat scroll 0 0 #329649
+    background: none repeat scroll 0 0 #16a085
 }
 	}
 
@@ -2044,7 +2121,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .single_pricelist:hover .price_select{
-    background-color: #329649;
+    background-color: #16a085;
     color: #FFFFFF;
     display: inline-block;
     font-size: 18px;
@@ -2090,7 +2167,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 }
 
 .single_pricelist_content h1{
-  color: #329649;  
+  color: #16a085;  
   font-size: 25px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -2104,7 +2181,7 @@ automatically by Gulp. instead edit gulp/templates/sprite */
 }
 
 .price_select {
-  background-color: #329649;
+  background-color: #16a085;
   visibility: visible;
   border: 2px solid #fff;
   border-radius: 20px;

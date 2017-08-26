@@ -6,20 +6,7 @@
 	padding-bottom: 100px;
 }
 
-#map {
-	width: 100%;
-	height: 200px;
-	display: none;
-
-	@mixin atMedium {
-		width: 100%;
-		height: 350px;
-		display: block;
-	}
-}
-
 .social {
-	text-align: center;
 	color: #fff;
 
 	h2 {
@@ -34,16 +21,89 @@
 	&__links {
 		text-align: center;
 		color: #fff;
+		margin-top: 30px;
 		
-
+		h2 {
+			font-family: $paragraph;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+		li {
+			list-style: none;
+			font-family: $paragraph;
+			width: 45%;
+			margin: 0 auto;
+			margin-bottom: 25px;
+			display: block;
+			position: relative;
+		}
 		a {
+			width: 250px;
+			display: block;
 			margin: 5px;
 			color: #fff;
+			text-decoration: none;
 			transition: color .3s;
+			perspective: 1000px;
 		}
 
-		a:hover {
-			color: $gray;
+		a:hover .link-icon {
+			transform: rotateY(0deg);
 		}
+	}
+}
+.link-name {
+	padding: 10px;
+	width: 180px;
+	font-size: 1.2rem;
+	position: relative;
+	border: 2px solid #fff;
+	background-color: $gray;
+	display: block;
+}
+.link-icon {
+	float: right;
+	top: -46px;
+	left: -31px;
+	padding: 5px;
+	position: relative;
+	border: 2px solid #fff;
+	border-left: none;
+	display: block;
+	transform-origin: left;
+	transition: .3s transform ease-in-out;
+	transform: rotateY(90deg);
+}
+
+/*Form*/
+.form-group {
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: $paragraph;
+	width: 100%;
+	margin: 0 auto;
+	label{
+		display: block;
+		margin-bottom: 5px;
+	}
+	input{
+		display: block;
+		width: 80%;
+		height: 50px;
+		margin-bottom: 10px;
+		padding: 5px;
+		border: none; 
+		border-radius: 10px;
+	}
+	input:focus {
+	    background-color: $gray;
+	    color: #fff;
+	}
+	textarea {
+		display: block;
+		width: 80%;
+		border: none;
+		padding: 5px;
+		border-radius: 10px;
 	}
 }

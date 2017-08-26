@@ -23,9 +23,17 @@
 		font-size: 1.25rem;
 		}
 	}
+	&-form {
+		width: 80%;
+		margin: 0 auto;
+		cursor: pointer;
+	}
 }
 
 .btn__large:hover {
 	background-color: $mainGreen;
 	padding: .8rem 3rem;
+}
+.btn-form:hover {
+	background-color: $gray;
 }

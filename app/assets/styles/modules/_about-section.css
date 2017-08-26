@@ -1,42 +1,28 @@
 .about {
 	width: 100%;
 	height: auto;
-	background-color: $gray;
+	background-color: $mainGreen;
 	position: relative;
-	padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 100px;
     color: #fff;
 
     &__img {
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
 		img {
-		width: 100%;
-		margin-top: 5%;
-        margin-bottom: 5%;
-    	height: 180px;
-        border-radius: 25px;
+		width: 250px;
+    	height: 250px;
+        border-radius: 50%;
     	box-shadow: 6px 6px 10px 5px #232627;
-            
-            @mixin atSmall{
-                height: 350px;
-            }
-
-            @mixin atMedium {
-                margin-top: 25%;
-                margin-bottom: 0;
-                height: 300px;
-            }
-            @mixin atLarge {
-              margin-top: 30%;
-              margin-bottom: 0;
-              height: 500px;  
-            }
 		}
     }
 
     &__text {
-    	max-width: auto;
     	margin-left: 0;
         padding: 0px 5px;
+        padding-top: 5%;
     	text-align: justify;
 
         @mixin atMedium {
@@ -46,7 +32,6 @@
 
         @mixin atLarge {
             max-width: 600px;
-            margin-left: 15%;
         }
 
     	h3 {
@@ -60,12 +45,9 @@
             }
     	}
     	li {
+            font-size: 1.2rem;
     		font-family: $paragraph;
     	}
-    }
-
-    @mixin atMedium {
-    	padding-top: 100px;	
     }
 }
 .resume-btn {

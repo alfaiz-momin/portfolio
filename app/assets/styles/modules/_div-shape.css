@@ -1,12 +1,12 @@
-.shape:before {
+.shapeBefore:before {
 	content: '';
-	width: 50%;
+	width: 100%;
 	height: 65px;
 	position: absolute;
-	top: -48px;
+	top: -38px;
 	left: 0;
 	background: inherit;
-	transform: skewY(8deg);
+	transform: skewY(2deg);
 
 	@mixin atSmall {
 		height: 80px;
@@ -18,15 +18,15 @@
 		height: 100px;
 	}
 }
-.shape:after {
+.shapeAfter:after {
 	content: '';
-	width: 50%;
+	width: 100%;
 	height: 65px;
 	position: absolute;
-	top: -48px;
+	top: -38px;
 	right: 0;
 	background: inherit;
-	transform: skewY(-8deg);
+	transform: skewY(-2deg);
 
 	@mixin atSmall {
 		height: 80px;

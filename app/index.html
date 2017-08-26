@@ -40,8 +40,8 @@
       </div>
       <nav class="primary-nav primary-nav__pull-right">
         <ul>
-          <li><a href="#project" id="project-link">Projects</a></li>
           <li><a href="#about" id="about-link">About me</a></li>
+          <li><a href="#project" id="project-link">Projects</a></li>
           <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
       </nav>
@@ -68,12 +68,69 @@
       <p class="large-hero__description large-hero__info">I use Bootstrap3&4, Sass, Gulp, and Latest tools. in my workflow.</p>
       <p><a href="hireme.html" class="btn btn__large" target="_blank">Hire Me</a></p>
     </div>
+    <p class="scroll-dwon scroll-dwon--t-margin">Scroll down for more</p>
+    <p class="scroll-dwon">&#x2193;</p>
   </div>
 </div>
 <!--=== Hero section END ===-->
 
+<!--=== About section Start ===-->
+<div id="about" class="about shapeAfter page-section" data-matching-link="#about-link">
+  <h1 class="section-title section-title__less-t-margin">About Me</h1>
+  <div class="wrapper">
+    <div class="row">
+        <div class="about__img">
+            <img class="lazyload" data-srcset="assets/images/self-large.jpg" alt="my photo">
+        </div>
+    </div>
+    <div class="row row__gutters">
+      <div class="row__large-6 row__medium-6">
+        <div class="about__text">
+          <p>
+            My Name is Alfaiz Momin. I live in Mumbai, India.<br><br>I am a front-end web developer. Working as a full-time freelancer.
+          </p>
+          <h3>Education:</h3>
+          <p>
+            I have completed my HSC (10 + 2) with commerce. After completing HSC, I started to learn coding (web development) from different sources on the internet. Now I am working as a professional front-end web developer.
+          </p>
+          <h3>Skills:</h3>
+          <ul>
+            <li>HTML 5</li>
+            <li>CSS 3 (Bootstrap3 & 4, Sass, postCSS)</li>
+            <li>JavaScript (Jquery)</li>
+            <li>Tools (Gulp.js, Webpack, etc.)</li>
+          </ul>
+          <h3>Work Experience:</h3>
+          <p>
+            I have worked as a freelancer on fiverr.com and I have completed a few project successfully. Apart from that, I have created some projects. Some of them are live on <a href="https://github.com/alfaiz-momin" target="_blank">github.com</a>.
+          </p>
+        </div>
+      </div>
+      <div class="row__large-6 row__medium-6">
+        <div class="about__text">
+            <h3>How I work:</h3>
+            <p>
+              My main job is to convert client’s project design (PSD, image etc.) to a responsive well-optimized web page. I use modern technology and tools such as gulp, sass, post CSS etc. I also use CSS framework like “bootstrap” in my workflow.
+            </p>
+            <h3>Mobile First approach:</h3>
+            <p>I write CSS code for smaller devices first and then write media query for medium and larger devices.</p>
+            <h3>Image Optimization:</h3>
+            <p>I optimize all images and write some tricky code for saving data and screen spaces, especially on small screen.</p>
+            <h3>File and code management:</h3>
+            <p>I manage all files and related content (image, icon, etc.) in a proper convection of modern web development. I use <b>modular method</b> to keep all code files in proper way.</p>
+            <p>I write semantic code with comments. And I use <b>BEM method</b> for naming CSS classes (not all time).</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <p class="resume-btn"><a href="https://drive.google.com/file/d/0B0So3D088wBeSXRfU2xxTWt6U1U/view?usp=sharing" target="_blank" class="btn btn__large">Download Resume</a></p>
+    </div>
+  </div>
+</div>
+<!--=== About section End ===-->
+
 <!--=== project section start ===-->
-<div id="project" class="project shape page-section" data-matching-link="#project-link">
+<div id="project" class="project shapeBefore page-section" data-matching-link="#project-link">
   <h1 class="section-title">Projects</h1>
     <p class="project__btn">
       <a href="javascript:void(0);" class="btn active" data-trigger="webpages">Web Pages</a>
@@ -235,84 +292,43 @@
 </div>
 <!--=== project section End ===-->
 
-<!--=== About section Start ===-->
-<div id="about" class="about shape page-section" data-matching-link="#about-link">
-  <h1 class="section-title section-title__less-t-margin">About Me</h1>
-  <div class="wrapper">
-    <div class="row">
-      <div class="row__medium-4">
-        <div class="about__img">
-          <picture>
-            <source data-srcset="assets/images/self-large.jpg" media="(min-width: 1020px)">
-            <source data-srcset="assets/images/self-large.jpg" media="(min-width: 800px)">
-            <img class="lazyload" data-srcset="assets/images/self-small.jpg" alt="my photo">
-          </picture>
-        </div>
-      </div>
-      <div class="row__medium-8">
-        <div class="about__text">
-          <p>
-            My Name is Alfaiz Momin. I live in Mumbai, India.<br><br>I am a front-end web developer. Working as a full-time freelancer.
-          </p>
-          <h3>Education:</h3>
-          <p>
-            I have completed my HSC (10 + 2) with commerce. After completing HSC, I started to learn coding (web development) from different sources on the internet. Now I am working as a professional front-end web developer.
-          </p>
-          <h3>Skills:</h3>
-          <ul>
-            <li>HTML 5</li>
-            <li>CSS 3 (Bootstrap3 & 4, Sass, postCSS)</li>
-            <li>JavaScript (Jquery)</li>
-            <li>Tools (Gulp.js, Webpack, etc.)</li>
-          </ul>
-          <h3>Work Experience:</h3>
-          <p>
-            I have worked as a freelancer on fiverr.com and I have completed a few project successfully. Apart from that, I have created some projects. Some of them are live on <a href="https://github.com/alfaiz-momin" target="_blank">github.com</a>.
-          </p>
-          <h3>How I work:</h3>
-          <p>
-            My main job is to convert client’s project design (PSD, image etc.) to a responsive well-optimized web page. I use modern technology and tools such as gulp, sass, post CSS etc. I also use CSS framework like “bootstrap” in my workflow.<br><br>Now I am available on all major platforms of freelancing such as upwork, peopleperhour, and freelancer.
-          </p>
-          <p class="resume-btn"><a href="https://drive.google.com/file/d/0B0So3D088wBeSXRfU2xxTWt6U1U/view?usp=sharing" target="_blank" class="btn btn__large">Download Resume</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--=== About section End ===-->
-
 <!--=== contact section start ===-->
-<div id="contact" class="contact shape page-section" data-matching-link="#contact-link">
+<div id="contact" class="contact shapeAfter page-section" data-matching-link="#contact-link">
   <h1 class="section-title">Contact Me</h1>
   <div class="wrapper">
     <div class="row row__gutters contact__inner">
       <div class="row__medium-6">
-        <div id="map"></div>
-        <script async>
-          function initMap() {
-        var uluru = {lat: 19.2403, lng: 73.1305};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-        </script>
+        <div class="social__links">
+        <h2>Be connected on:</h2>
+        <ul class="text-center">
+          <li>
+          <a href="https://www.linkedin.com/in/alfaiz-momin/"><span class="link-name">Linkedin</span><span class="link-icon"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span></a>
+          </li>
+          <li>
+          <a href="https://github.com/alfaiz-momin" target="_blank"><span class="link-name">GitHub</span><span class="link-icon"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></span></a>
+          </li>
+          <li>
+          <a href="https://twitter.com/alfaiz_momin" target="_blank"><span class="link-name">Twitter</span><span class="link-icon"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></span></a>
+          </li>
+        </ul>
+        </div>
       </div>
       <div class="row__medium-6">
-        <div class="social">
-          <h2>Feel free to contact me :)</h2>
-          <p>Send me a mail with your query or project description. I will revert you back with solution or estimate.<br><br><strong>Note: </strong>Always discuss everything clearly before hiring me.</p><br>
-          <p>alfaizmomin[at]gmail.com</p>
-        </div>
-        <div class="social__links">
-          <a href="https://www.linkedin.com/in/alfaiz-momin/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          <a href="https://github.com/alfaiz-momin" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/alfaiz_momin" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-        </div>
+      <form>
+          <div class="form-group">
+            <label for="name">First name:</label>
+            <input type="name" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="name">E-mail:</label>
+            <input type="name" id="email" placeholder="Enter your E-mail ID">
+          </div>
+          <div class="form-group">
+              <label for="massage">Massage:</label>
+              <textarea class="form-control massage" name="massage" placeholder="Enter your massage" rows="5"></textarea><br>
+              <button type="submit" class="btn btn-form">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -332,12 +348,6 @@
   <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
-    <!-- google map api -->
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWAov4ZNBia2NYg6FcW9BAMHEhQrFJvyk&callback=initMap" async>
-    </script>
-    <!-- google map api -->
 
 <!-- build:js assets/scripts/App.js -->
 <script src="/temp/scripts/App.js" type="text/javascript" async></script>
