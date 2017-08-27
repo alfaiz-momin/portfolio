@@ -9,38 +9,47 @@
   };
   firebase.initializeApp(config);
 
-  // Reference messages collection
-  var messagesRef = firebase.database('messages');
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-//submit form
-function submitForm(e) {
-	e.preventDefault();
+// Submit form
+function submitForm(e){
+  e.preventDefault();
 
-	// Get values
-	var name = getInputVal('name'),
-	email = getInputVal('email'),
-	message = getInputVal('message');
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var message = getInputVal('message');
 
-	//save message
-	saveMessage(name, email, message);
+  // Save message
+  saveMessage(name, email, message);
 
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('contactForm').reset();
 }
 
-// function to get form values
-function getInputVal(id) {
-	return document.getElementById(id).value;
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
 }
 
-// save message to firebase
-
-function saveMessage(){
-	var newMessageRef = messagesRef.push();
-	newMessageRef.set({
-		name: name,
-		email: email,
-		message: message
-	});
+// Save message to firebase
+function saveMessage(name, email, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email:email,
+    message:message
+  });
 }

@@ -143,3 +143,16 @@
 		color: #fff;
 	}
 }
+.alert{
+	display: none;
+	background-color: #329649;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	@mixin atMedium {
+		width: 90%;
+	}
+	@mixin atLarge {
+		width: 80%;
+	}
+}
