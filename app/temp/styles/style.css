@@ -1146,14 +1146,41 @@ a {
 			margin-bottom: 50px;
 		}
 
+.social__links ul {
+			width: 100%;
+			margin: 0 auto;
+			margin-left: -15%;
+		}
+
+@media (min-width: 530px) {
+
+.social__links ul {
+				margin-left: 0
+		}
+	}
+
+@media (min-width: 700px) {
+
+.social__links ul {
+				margin-left: 0
+		}
+	}
+
 .social__links li {
 			list-style: none;
 			font-family: 'Work Sans', sans-serif;
-			width: 45%;
+			width: 50%;
 			margin: 0 auto;
 			margin-bottom: 25px;
 			display: block;
 			position: relative;
+
+/*			@mixin atMedium {
+				width: 90%;
+			}
+			@mixin atLarge {
+				width: 45%;
+			}*/
 		}
 
 .social__links a {
@@ -1164,8 +1191,8 @@ a {
 			text-decoration: none;
 			-webkit-transition: color .3s;
 			transition: color .3s;
-			-webkit-perspective: 1000px;
-			        perspective: 1000px;
+			-webkit-perspective: 2000px;
+			        perspective: 2000px;
 		}
 
 .social__links a:hover .link-icon {
@@ -1217,12 +1244,26 @@ a {
 
 .form-group input{
 		display: block;
-		width: 80%;
+		width: 100%;
 		height: 50px;
 		margin-bottom: 10px;
 		padding: 5px;
 		border: none; 
 		border-radius: 10px;
+	}
+
+@media (min-width: 700px) {
+
+.form-group input{
+			width: 90%
+	}
+	}
+
+@media (min-width: 1010px) {
+
+.form-group input{
+			width: 80%
+	}
 	}
 
 .form-group input:focus {
@@ -1232,10 +1273,29 @@ a {
 
 .form-group textarea {
 		display: block;
-		width: 80%;
+		width: 100%;
 		border: none;
 		padding: 5px;
 		border-radius: 10px;
+	}
+
+@media (min-width: 700px) {
+
+.form-group textarea {
+			width: 90%
+	}
+	}
+
+@media (min-width: 1010px) {
+
+.form-group textarea {
+			width: 80%
+	}
+	}
+
+.form-group textarea:focus{
+		background-color: #7f8c8d;
+		color: #fff;
 	}
 
 .btn{
@@ -1270,9 +1330,23 @@ a {
 	}
 
 .btn-form {
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		cursor: pointer;
+	}
+
+@media (min-width: 700px) {
+
+.btn-form {
+			width: 90%
+	}
+	}
+
+@media (min-width: 1010px) {
+
+.btn-form {
+			width: 80%
+	}
 	}
 
 .btn__large:hover {

@@ -28,14 +28,32 @@
 			margin: 0 auto;
 			margin-bottom: 50px;
 		}
+		ul {
+			width: 100%;
+			margin: 0 auto;
+			margin-left: -15%;
+			@mixin atSmall {
+				margin-left: 0;
+			}
+			@mixin atMedium {
+				margin-left: 0;
+			}
+		}
 		li {
 			list-style: none;
 			font-family: $paragraph;
-			width: 45%;
+			width: 50%;
 			margin: 0 auto;
 			margin-bottom: 25px;
 			display: block;
 			position: relative;
+
+/*			@mixin atMedium {
+				width: 90%;
+			}
+			@mixin atLarge {
+				width: 45%;
+			}*/
 		}
 		a {
 			width: 250px;
@@ -44,7 +62,7 @@
 			color: #fff;
 			text-decoration: none;
 			transition: color .3s;
-			perspective: 1000px;
+			perspective: 2000px;
 		}
 
 		a:hover .link-icon {
@@ -88,12 +106,19 @@
 	}
 	input{
 		display: block;
-		width: 80%;
+		width: 100%;
 		height: 50px;
 		margin-bottom: 10px;
 		padding: 5px;
 		border: none; 
 		border-radius: 10px;
+
+		@mixin atMedium {
+			width: 90%;
+		}
+		@mixin atLarge {
+			width: 80%;
+		}
 	}
 	input:focus {
 	    background-color: $gray;
@@ -101,9 +126,20 @@
 	}
 	textarea {
 		display: block;
-		width: 80%;
+		width: 100%;
 		border: none;
 		padding: 5px;
 		border-radius: 10px;
+
+		@mixin atMedium {
+			width: 90%;
+		}
+		@mixin atLarge {
+			width: 80%;
+		}
+	}
+	textarea:focus{
+		background-color: $gray;
+		color: #fff;
 	}
 }
