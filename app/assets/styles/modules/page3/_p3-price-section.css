@@ -145,3 +145,13 @@
     visibility: hidden;
   }
 }
+.p3-text-box__inner{
+  margin: 0 auto;
+  font-family: $paragraph;
+  color: red;
+  padding: 20px;
+
+  @mixin atMedium{
+    margin-left: 25%;
+  }
+}

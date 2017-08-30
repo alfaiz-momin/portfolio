@@ -2,8 +2,9 @@
 	background-color: $mainBlue;
 	font-family: $paragraph;
 	width: 100%;
-	display: block;
+	top: 0px;
 	position: fixed;
+	display: block;
 
 	&__menu-content {
 		float: right;
